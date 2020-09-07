@@ -17,6 +17,8 @@ Examples
 90, 2  -->  "30x^3"
 */
 
-function integrate(coefficient, exponent) {
-  
+const integrate = (coefficient, exponent) => {
+  let newExp = exponent + 1;
+  let num = coefficient / newExp;
+  return num + 'x^' + newExp;
 }
